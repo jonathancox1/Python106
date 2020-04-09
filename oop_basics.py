@@ -1,3 +1,11 @@
+#
+#
+#
+#
+#Basic Object Oriented Programing
+#Notes
+
+
 #how to create a class
 class Hotel():
     pass
@@ -48,3 +56,24 @@ bates_motel
 
 #import from another file
 from python_file_name import Class_Name
+
+
+#keep all the class files in their own folder called lib
+#in that folder there should be a file called
+# __init__.py that is empty file in the folder containg the Classes
+
+#access that by
+from lib.superhero import Superhero
+from lib.villan import Villan
+
+#in those .py files
+#access the super Class again
+from lib.character import Character
+
+
+#inherit method from parent class but add its own customizations
+#def strike is defined in the superClass
+def strike(self, target):
+    #super() inherits the following Method and allows you to add
+    #customization for this specific class
+    super().strike(target)
